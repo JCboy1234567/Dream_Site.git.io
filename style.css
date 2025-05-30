@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20%;
+}
+.logo img{
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    margin-left: 5%;
+}
+.logo{
+    width: 13%;
+}
+.navbar{
+    width: 60%;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    text-shadow: 0px 10px 10px white;
+    transition: 0.3s;
+    margin-top: -1%;
+}
+.banner img{
+    width: 100%;
+}
+.container{
+    background-image: url(image/allbg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content{
+    font-size: larger;
+    padding: 2%;
+    width: 95%;
+    color: aliceblue;
+}
+.display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.display1 img{
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+}
+.display1 img:hover{
+    
+    border-radius: 10%;
+    transition: 0.3s;
+    margin-top: -1%;
+    box-shadow: 0px 5px 20px white;
+}
+.display2 img{
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+}
+.display2 img:hover{
+    
+    border-radius: 10%;
+    transition: 0.3s;
+    margin-top: -1%;
+    box-shadow: 0px 5px 20px white;
+}
+.display3 img{
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+}
+.display3 img:hover{
+    
+    border-radius: 10%;
+    transition: 0.3s;
+    margin-top: -1%;
+    box-shadow: 0px 5px 20px white;
+}
+.footer{
+    text-align: center;
+    margin-top: 2%;
+    height: 100%;
+    color: white;
+    background-color: black;
+}
+.footer p{
+    padding-top: 1%;
+    
+}
+.footer-link{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    row-gap: 10px;
+    margin-top: 1%;
+    width: 100%;
+    gap: 5%;
+}
+.footer-link a{
+    text-decoration: none;
+    padding-bottom: 2%;
+    color: white;
+}
+.footer-link a:hover{
+    color: rgb(27, 143, 252);
+    transition: 0.3s;
+}
+.form-bg{
+    margin-top: 2%;
+    color: aliceblue;
+    width: 90%;
+    margin-left: 3%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 20px;
+}
+.form-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    font-size: larger;
+}
+input{
+    width: 70%;
+    font-size: 15px;
+    padding: 0.8%;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1%;
+}
+select{
+    width: 71.8%;
+    font-size: 15px;
+    padding: 0.8%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+option{
+    padding: 0.8%;
+    
+}
+input .message{
+    height: 30%;
+}
+.form-content textarea{
+    width: 69.8%;
+    height: 140px;
+    font-size: 15px;
+    padding: 1%;
+    border-radius: 10px;
+}
+.button{
+    display: flex;
+    justify-content: end;
+    margin-right: 2%;
+}
+.button button{
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(27, 143, 252);
+    width: 10%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+@media (max-width: 670px) {
+    .logo{
+        width: 100%;
+        display: flex;
+        margin-left: -2%;
+        justify-content: center;
+    }
+    .logo img{
+        width: 25%;
+        
+    }
+    .header{
+        display: block;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar a{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 1px black solid;
+        width: 90%;
+        margin: 1%;
+        padding: 1%;
+        padding-bottom: 3%;
+    }
+    .display{
+        display: block;
+        flex-direction: column;
+        margin: 2%;
+    }
+    .display1 img{
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 3%;
+        object-fit: cover;
+    }
+    .display2 img{
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 3%;
+        object-fit: cover;
+        
+    }
+    .display3 img{
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 3%;
+        object-fit: cover;
+    }
+    .form-content{
+        display: block;
+    }
+    .form-content p{
+        padding-bottom: 2%;
+    }
+    input{
+        width: 97.5%;
+    }
+    select{
+        width: 100%;
+    }
+    .form-content textarea{
+        width: 97.5%;
+    }
+    .footer{
+        height: 100%;
+        padding-bottom: 3%;
+        padding-top: 2%;
+    }
+    .content{
+        font-size: 20px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+    }
+    .button button{
+        width: 100%;
+    }
+    .form-bg{
+        margin-left: 3%;
+    }
+}
