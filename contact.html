@@ -25,48 +25,60 @@
         <div class="form-bg">
             <div class="form-content">
                 <p>First Name</p>
-                <input type="text" name="fullname" placeholder="Your Name">
+                <input type="text" name="fullname" placeholder="Your Name" id="firstname">
             </div>
             <div class="form-content">
                 <p>Last Name</p>
-                <input type="text" name="lastname" placeholder="Your Last Name">
+                <input type="text" name="lastname" placeholder="Your Last Name" id="lastname">
             </div>
             <div class="form-content">
                 <p>Telephone No.</p>
-                <input type="telephone" name="phone" placeholder="Your Phone No.">
+                <input type="telephone" name="phone" placeholder="Your Phone No." id="telephone">
             </div>
             <div class="form-content">
                 <p>E-mail</p>
-                <input type="email" name="email" placeholder="sample@host.com">
+                <input type="email" name="email" placeholder="sample@host.com" id="email">
             </div>
             <div class="form-content">
                 <p>Organization</p>
-                <input type="text" name="Organization" >
+                <input type="text" name="Organization" id="organization">
             </div>
             <div class="form-content">
                 <p>Province</p>
                 <select id="Province" aria-label="Default select example">
                     <option value="">Select Your Province</option>
+                    <option value="Davao del Norte">Davao del Norte</option>
+                    <option value="Davao de Oro">Davao de Oro</option>
+                    <option value="Caraga">Caraga</option>
+                    <option value="Northern Mindanao">Northern Mindanao</option>
                 </select>
             </div>
             <div class="form-content">
                 <p>City/Town</p>
                 <select id="City" aria-label="Default select example">
                     <option value="">Select Your Municipality or City</option>
+                    <option value="Tagum">Tagum</option>
+                    <option value="Mati">Mati</option>
+                    <option value="Digos">Digos</option>
+                    <option value="Panabo">Panabo</option>
                 </select>
             </div>
             <div class="form-content">
                 <p>Barangay</p>
                 <select id="Barangay" aria-label="Default select example">
                     <option value="">Select Your Barangay</option>
+                    <option value="Mankilam">Mankilam</option>
+                    <option value="San Isidro">San Isidro</option>
+                    <option value="Davao">Davao</option>
+                    <option value="Apokon">Apokon</option>
                 </select>
             </div>
             <div class="form-content">
                 <p>Message</p>
-                <textarea name="message" placeholder="Write Something......" class="contact input"></textarea>
+                <textarea name="message" placeholder="Write Something......" class="contact input" id="message"></textarea>
             </div>
             <div class="button">
-                <button type="submit">submit</button>
+                <button type="submit" onclick="Submit()">submit</button>
             </div>
         </div>
         <div class="footer">
@@ -78,5 +90,55 @@
                 </div>
             </div>
         </div>
+        <script>
+                
+
+            function Submit(){
+                let firstname = document.getElementById("firstname").value
+                let lastname = document.getElementById("lastname").value
+                let telephone = document.getElementById("telephone").value
+                let email = document.getElementById("email").value
+                let organization = document.getElementById("organization").value
+                let message = document.getElementById("message").value
+
+                let Province = document.getElementById("Province").value
+                let City = document.getElementById("City").value
+                let Barangay = document.getElementById("Barangay").value
+                
+                if(firstname == ""){
+                    alert("Please put your firstname!")
+                }
+                else if(lastname == ""){
+                    alert("Please put your lastname!")
+                }
+                else if(firstname == lastname){
+                    alert(true)
+                }
+                else if(isNaN(telephone)){
+                    alert("Your input telephone is not a Number!")
+                }
+                else if(email == ""){
+                    alert("Please put your email!")
+                }
+                else if(organization == ""){
+                    alert("Please put your organization")
+                }
+                else if( alert(Province==="Davao del Norte" || City==="Tagum" || Barangay==="Mankilam")){
+                    
+                }
+                else if(message.length<=10){
+                    alert("Input message is less than 10")
+                }
+                else{
+                    alert("Thankyou! Godblessed!")
+                }
+
+
+
+                
+            }
+
+            
+        </script>
     </body>
 </html>

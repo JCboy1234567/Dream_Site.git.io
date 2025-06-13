@@ -22,7 +22,7 @@
     width: 60%;
     display: flex;
     gap: 10%;
-    justify-content: center;
+    justify-content: end;
 }
 .navbar a{
     text-decoration: none;
